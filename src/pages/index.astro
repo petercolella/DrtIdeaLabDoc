@@ -1,16 +1,29 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <h2>
+    <a href="https://gis.drtstrategies.com/portal/home/" target="_blank"
+      >ArcGIS Demo</a
+    >
+  </h2>
+  <h3>
+    <a href="/gather-prerequisite">Gather Prerequisite</a>
+  </h3>
+  <h3>
+    <a href="/inital-setup">Inital Setup</a>
+  </h3>
+  <h3>
+    <a href="/deployment">Deployment</a>
+  </h3>
+  <h3>
+    <a href="arcgis-setup">ArcGIS Setup</a>
+  </h3>
+</Layout>
+
+<style>
+  a {
+    color: var(--light);
+  }
+</style>

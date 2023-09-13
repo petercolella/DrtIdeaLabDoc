@@ -1,0 +1,38 @@
+:root {
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --blue: #007bff;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  /* display: flex;
+height: calc(100vh - 10px);
+flex-direction: column; */
+}
+
+section {
+  padding: 1rem 0;
+}
+
+h1 {
+  color: var(--light);
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.container {
+  padding-inline: calc(8px + 1.5625vw);
+}
