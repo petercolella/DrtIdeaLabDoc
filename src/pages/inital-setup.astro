@@ -2,4 +2,42 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>Do some setup</Layout>
+<Layout>
+  <h2>Setup</h2>
+  <ul>
+    <li>
+      Create the access key ID and secret access key for your AWS user account.
+    </li>
+    <li>Create your Amazon VPC (Virtual Private Cloud).</li>
+    <li>
+      Create a key pair and the associated .pem file to connect to your EC2
+      instance.
+    </li>
+    <li>
+      If necessary, create a .pfx file from your SSL certificate and password.
+      In our case, we had to use the command line interface of the library <code
+        >openssl</code
+      >
+      <br />
+      <code style="background-color: black;"
+        >winpty openssl pkcs12 -export -out certificate.pfx -inkey
+        ansi-private-key.key -in ansi-certificate.crt</code
+      >
+    </li>
+    <li>Create an elastic IP address (EIP).</li>
+    <li>
+      Determine usernames and passwords for the site administrator and ArcGIS
+      service accounts.
+    </li>
+    <li>Determine your machine requirements:</li>
+    <ul>
+      <li>Instance type</li>
+      <li>Number of cores</li>
+      <li>Amount of memory</li>
+      <li>Drive size</li>
+    </ul>
+    <li>
+      Determine your configuration store type (Cloud Store or File System).
+    </li>
+  </ul>
+</Layout>
